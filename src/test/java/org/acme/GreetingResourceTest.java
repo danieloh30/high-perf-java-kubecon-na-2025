@@ -14,7 +14,16 @@ class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("Hello from Quarkus REST"));
+             .body(is("Hello from KubeCon NA 2025"));
+    }
+
+    @Test
+    void testHelloNameEndpoint() {
+        given()
+                .when().get("/hello/name")
+                .then()
+                .statusCode(200)
+                .body(is("Welcome Dan & Ryan at the Application Development Track!!!"));
     }
 
 }

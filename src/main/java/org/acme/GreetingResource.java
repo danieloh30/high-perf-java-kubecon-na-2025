@@ -13,4 +13,11 @@ public class GreetingResource {
     public String hello() {
         return "Hello from KubeCon NA 2025";
     }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("name")
+    public String helloName() {
+        return "Welcome Dan & Ryan at the Application Development Track!!!";
+    }
 }
