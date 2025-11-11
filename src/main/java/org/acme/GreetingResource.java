@@ -18,6 +18,6 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("name")
     public String helloName() {
-        return "Welcome Dan & Ryan at the Application Development Track!!!";
+        return "Welcome Dan & Ryan at the Cloud Native Experience Track!!!";
     }
 }

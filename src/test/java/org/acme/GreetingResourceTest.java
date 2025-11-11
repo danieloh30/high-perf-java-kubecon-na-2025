@@ -23,7 +23,7 @@ class GreetingResourceTest {
                 .when().get("/hello/name")
                 .then()
                 .statusCode(200)
-                .body(is("Welcome Dan & Ryan at the Application Development Track!!!"));
+                .body(is("Welcome Dan & Ryan at the Cloud Native Experience Track!!!"));
     }
 
 }
